@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         Subject math = new Subject("math",50);
         Subject english = new Subject("english",80);
-        Subject informatic = new Subject("informatic",30);
+        Subject informatic = new Subject("computing",30);
         List<Subject> subjectListManolo = new ArrayList<>();
         List<Subject> subjectListMatilda = new ArrayList<>();
         List<Subject> subjectListJosefa = new ArrayList<>();
