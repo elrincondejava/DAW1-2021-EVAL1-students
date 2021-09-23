@@ -10,11 +10,11 @@ public class Main {
         List<Subject> subjectListMatilda = new ArrayList<>();
         List<Subject> subjectListJosefa = new ArrayList<>();
         subjectListManolo.add(math);
-        Student manolo = new Student("Manolo","Garcia","4568P",subjectListManolo);
         subjectListJosefa.add(english);
-        Student josefa = new Student("Josefa","Garcia","4568Q",subjectListJosefa);
         subjectListMatilda.add(informatic);
         subjectListMatilda.add(english);
+        Student manolo = new Student("Manolo","Garcia","4568P",subjectListManolo);
+        Student josefa = new Student("Josefa","Garcia","4568Q",subjectListJosefa);
         Student matilda = new Student("Matilda","Garcia","4568A",subjectListMatilda);
         Data.addStudent(manolo);
         Data.addStudent(matilda);
