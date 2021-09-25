@@ -29,9 +29,7 @@ Debe tener los métodos:
 - **showStudentByEnrollSubject(String subjectName)**, mostrar los estudiantes que se han matriculado de una asignatura concreta
 
 ---
-Cambiamos el método **toString** de la **clase Student**
-para que los datos se muestren así:
-
+Cambiamos el método **toString** de la **clase Student** para que los datos se muestren así:  
 Student Manolo García  
 His subjects are:  
         1. math  
