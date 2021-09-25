@@ -1,5 +1,5 @@
-## Clase Student
-Añadir los atributos:
+## class Student
+Añadir los atributos:  
 - **firstName**
 - **secondName**
 - **studentId**
@@ -8,7 +8,7 @@ Añadir los atributos:
 Inlcuir un método que añada asinaturas al listado de asignaturas matriculadas
 
 ---
-## Clase Subject
+## class Subject
 Añadir los atributos:
 - **name**
 - **credits**
@@ -18,7 +18,7 @@ las clases deben tener sus:
 - contructor vacío y otro con todos los atributos
 
 ---
-## Clase Data
+## class Data
 Creamos un atributo:
 - **studenList**, listado de estudiantes
 
@@ -30,10 +30,12 @@ Debe tener los métodos:
 
 ---
 Cambiamos el método **toString** de la **clase Student** para que los datos se muestren así:  
-Student Manolo García  
+Ejemplo:  
+
+Student Samuel Martín  
 His subjects are:  
 1. math  
-2. english  
+2. data base  
 3. computing  
 
 ---
@@ -47,12 +49,12 @@ Creamos 6 asignaturas con los siguientes datos:
 6. html, 40 credits
 
 También creamos 6 estudiantes:  
-1. Manolo García, dni: 4568P
-2. Josefa García, dni: 4568Q
-3. Matilda García, dni: 4568A
-4. Alex Rodríguez, dni: 5432B
-5. Javier Hernández, dni: 8765K
-6. Samuel Martín, dni: 4321Z  
+1. Manolo García, studentId: 4568P
+2. Josefa García, studentId: 4568Q
+3. Matilda García, studentId: 4568A
+4. Alex Rodríguez, studentId: 5432B
+5. Javier Hernández, studentId: 8765K
+6. Samuel Martín, studentId: 4321Z  
 
 Las listas de asignaturas para cada alumno son:  
 1. Manolo = math
@@ -63,3 +65,38 @@ Las listas de asignaturas para cada alumno son:
 6. Samuel = math, data base, computing  
 
 crearlas y añadirlas a cada alumno
+
+---
+## class Teacher
+Añadir los atributos:
+- **firstName**
+- **secondName**
+- **teachedSubjectList**, es un listado de las asignaturas que immparte  
+
+---
+
+En la **class Main** creamos los siguientes profesores:  
+1. Antonio Fernández, math
+2. Jennifer Sunder, english
+3. Juan Navarro, compunting
+4. Miguel Hernández, data base
+5. María José, java, hmtl  
+
+---
+
+En la **class Data** creamos:  
+Un nuevo atributo llamado:
+- **teachList**, que será un listado de profesores, atributo estático.  
+añadimos los siguientes métodos a esta clase: 
+- **addTeacher(Teacher teacher), para añadir al altributo anterior
+- **showTeachers(), muestra a cada profesor y su listado de asignaturas  
+para mostrar el listado anterior usamos el mismo formaquto que con los estudiantes:  
+
+ Ejemplo:
+
+Teacher María José  
+His subjects are:
+1. java
+2. html  
+
+---
