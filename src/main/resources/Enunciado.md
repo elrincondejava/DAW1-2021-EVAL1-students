@@ -3,7 +3,7 @@ Añadir los atributos:
 - **firstName**
 - **secondName**
 - **studentId**
-- **enrollSubjectList** (es un listado de las asignaturas donde está matriculado)
+- **enrollSubjectList**, es un listado de las asignaturas donde está matriculado
 
 Inlcuir un método que añada asinaturas al listado de asignaturas matriculadas
 
@@ -20,11 +20,11 @@ las clases deben tener sus:
 ---
 ## Clase Data
 Creamos un atributo:
-- **studenList** (listado de estudiantes)
+- **studenList**, listado de estudiantes
 
 Debe tener los métodos:
 - **addStudent(Student student)**, añadir estudiante a listado
-- **showAllStudents()**, mostrar todos los estudiantes showAllStudents()
+- **showAllStudents()**, mostrar todos los estudiantes
 - **showStudent(String studentId)**, mostrar un estudiante por su identificador 
 - **showStudentByEnrollSubject(String subjectName)**, mostrar los estudiantes que se han matriculado de una asignatura concreta
 
