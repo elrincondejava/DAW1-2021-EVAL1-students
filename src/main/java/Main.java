@@ -7,7 +7,7 @@ public class Main {
         // CREATING SUBJECTS
         Subject math = new Subject("math",50);
         Subject english = new Subject("english",80);
-        Subject informatic = new Subject("computing",30);
+        Subject computing = new Subject("computing",30);
 
         // CREATING SUBJECTS LIST FOR STUDENTS
         List<Subject> subjectListManolo = new ArrayList<>();
@@ -17,7 +17,7 @@ public class Main {
         // ADD SUBJECTS TO SUBJECTS LIST
         subjectListManolo.add(math);
         subjectListJosefa.add(english);
-        subjectListMatilda.add(informatic);
+        subjectListMatilda.add(computing);
         subjectListMatilda.add(english);
 
         // CREATING STUDENTS WITH THEIR SUBJECTS LIST
