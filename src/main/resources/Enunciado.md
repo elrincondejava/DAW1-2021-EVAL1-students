@@ -1,4 +1,4 @@
-##Clase Student
+## Clase Student
 Añadir los atributos:
 - **firstName**
 - **secondName**
@@ -8,7 +8,7 @@ Añadir los atributos:
 Inlcuir un método que añada asinaturas al listado de asignaturas matriculadas
 
 ---
-##Clase Subject
+## Clase Subject
 Añadir los atributos:
 - **name**
 - **credits**
@@ -18,7 +18,7 @@ las clases deben tener sus:
 - contructor vacío y otro con todos los atributos
 
 ---
-##Clase Data
+## Clase Data
 Creamos un atributo:
 - **studenList** (listado de estudiantes)
 
