@@ -32,7 +32,7 @@ Debe tener los métodos:
 Cambiamos el método **toString** de la **clase Student** para que los datos se muestren así:  
 Student Manolo García  
 His subjects are:  
-        1. math  
-        2. english  
-        3. computing  
+1. math  
+2. english  
+3. computing  
 ---
