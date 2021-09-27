@@ -30,9 +30,7 @@ public class Subject {
 
     @Override
     public String toString() {
-        return "Subject{" +
-                "name='" + name + '\'' +
-                ", credits='" + credits + '\'' +
-                '}';
+
+        return "\n" + name ;
     }
 }

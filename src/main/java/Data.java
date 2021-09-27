@@ -3,6 +3,7 @@ import java.util.List;
 
 public class Data {
     private static List<Student> studenList = new ArrayList<>();
+    private static List<Teacher> teachList = new ArrayList<>();
 
 
 
@@ -11,8 +12,16 @@ public class Data {
         Data.studenList.add(student);
     }
 
+    public static void addTeacher(Teacher teacher) {
+
+        Data.teachList.add(teacher);
+    }
+
+
     public static  void showAllStudents() {
-        System.out.println(studenList);
+        for(Student student : studenList) {
+            System.out.println(student.toString());
+        }
     }
 
     public static void showStudent(String studentId) {
@@ -22,6 +31,15 @@ public class Data {
             }
         }
     }
+    public static void showTeacher(Teacher teacher) {
+        for (Teacher teachers : Data.teachList) {
+                System.out.println(teacher);
+            }
+        }
+
+
+
+
     public static void showStudentByEnrollSubject(String subjectName){
         for (Student student : Data.studenList) {
             List<Subject> subjectStudentList = student.getEnrollSubjectList();

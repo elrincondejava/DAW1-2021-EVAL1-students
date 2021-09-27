@@ -61,11 +61,11 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
-                "firstName='" + firstName + '\'' +
-                ", secondName='" + secondName + '\'' +
-                ", studentId='" + studentId + '\'' +
-                ", enrollSubjectList=" + enrollSubjectList +
-                '}';
+        String resultado = "Student " + " " + firstName + " " + secondName + "\n" +
+                "his subjects are: " + "\n";
+        for (int i = 0; i < this.enrollSubjectList.size(); i++) {
+            resultado += (i + 1) + ". " + enrollSubjectList.get(i).getName() + "\n";
+        }
+        return resultado;
     }
 }

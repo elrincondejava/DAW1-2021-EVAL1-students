@@ -80,7 +80,7 @@ En la **class Main** creamos los siguientes profesores:
 2. Jennifer Sunder, english
 3. Juan Navarro, compunting
 4. Miguel Hernández, data base
-5. María José, java, hmtl  
+5. María José Hernández, java, hmtl  
 
 ---
 
