@@ -22,11 +22,11 @@ public class Main {
         List<Subject> subjectListSamuel = new ArrayList<>();
 
         // CREATING SUBJECTS LIST FOR TEACHERS
-        List<Teacher> subjectListAntonio = new ArrayList<>();
-        List<Teacher> subjectListJennifer = new ArrayList<>();
-        List<Teacher> subjectListJuan= new ArrayList<>();
-        List<Teacher> subjectListMiguel = new ArrayList<>();
-        List<Teacher> subjectListMariajo = new ArrayList<>();
+        List<Subject> subjectListAntonio = new ArrayList<>();
+        List<Subject> subjectListJennifer = new ArrayList<>();
+        List<Subject> subjectListJuan= new ArrayList<>();
+        List<Subject> subjectListMiguel = new ArrayList<>();
+        List<Subject> subjectListMariajo = new ArrayList<>();
 
 
         // ADD SUBJECTS TO SUBJECTS LIST
@@ -56,14 +56,14 @@ public class Main {
         Teacher mariaJose = new Teacher("María José","Hernández",subjectListMariajo);
 
         // ADD STUDENTS TO DATA CLASS
-        Data.addStudent(manolo);
-        Data.addStudent(matilda);
-        Data.addStudent(josefa);
+        Data.addStudents(List.of(manolo, matilda, josefa, alex , javier , samuel));
+        Data.addTeachers(List.of(antonio , jennifer , juan, miguel , mariaJose));
 
         //USING METHODS OF DATA CLASS
-        //Data.showAllStudents();
+       // Data.showAllStudents();
        //Data.showStudent("4568P");
-        // Data.showStudentByEnrollSubject("english");
+       //Data.showStudentByEnrollSubject("english");
+        Data.showAllTeachers();
 
     }
 }

@@ -3,12 +3,12 @@ import java.util.List;
 public class Teacher {
     private String firstName;
     private String secondName;
-    private List<Teacher> teachedSubjectList;
+    private List<Subject> teachedSubjectList;
 
     public Teacher() {
     }
 
-    public Teacher(String firstName, String secondName, List<Teacher> teachedSubjectList) {
+    public Teacher(String firstName, String secondName, List<Subject> teachedSubjectList) {
         this.firstName = firstName;
         this.secondName = secondName;
         this.teachedSubjectList = teachedSubjectList;
@@ -32,21 +32,22 @@ public class Teacher {
         return this;
     }
 
-    public List<Teacher> getTeachedSubjectList() {
+    public List<Subject> getTeachedSubjectList() {
         return teachedSubjectList;
     }
 
-    public Teacher setTeachedSubjectList(List<Teacher> teachedSubjectList) {
+    public Teacher setTeachedSubjectList(List<Subject> teachedSubjectList) {
         this.teachedSubjectList = teachedSubjectList;
         return this;
     }
 
     @Override
     public String toString() {
-        return "Teacher{" +
-                "firstName='" + firstName + '\'' +
-                ", secondName='" + secondName + '\'' +
-                ", teachedSubjectList=" + teachedSubjectList +
-                '}';
+        String resultado = "Teacher " + " " + firstName + " " + secondName + "\n" +
+                "his subjects are: " + "\n";
+        for (int i = 0; i < this.teachedSubjectList.size(); i++) {
+            resultado += (i + 1) + ". " + this.teachedSubjectList.get(i).getName() + "\n";
+        }
+        return resultado;
     }
 }

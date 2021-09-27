@@ -11,13 +11,20 @@ public class Data {
 
         Data.studenList.add(student);
     }
+    public static void addStudents(List<Student> studenList) {
+
+        Data.studenList.addAll(studenList);
+    }
 
     public static void addTeacher(Teacher teacher) {
 
         Data.teachList.add(teacher);
     }
 
+    public static void addTeachers(List<Teacher> teachList) {
 
+        Data.teachList.addAll(teachList);
+    }
     public static  void showAllStudents() {
         for(Student student : studenList) {
             System.out.println(student.toString());
@@ -31,9 +38,9 @@ public class Data {
             }
         }
     }
-    public static void showTeacher(Teacher teacher) {
+    public static void showAllTeachers() {
         for (Teacher teachers : Data.teachList) {
-                System.out.println(teacher);
+                System.out.println(teachers);
             }
         }
 

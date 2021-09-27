@@ -89,7 +89,7 @@ Un nuevo atributo llamado:
 - **teachList**, que será un listado de profesores, atributo estático.  
 añadimos los siguientes métodos a esta clase: 
 - **addTeacher(Teacher teacher), para añadir al altributo anterior
-- **showTeachers(), muestra a cada profesor y su listado de asignaturas  
+- **showAllTeachers() , muestra a cada profesor y su listado de asignaturas  
 para mostrar el listado anterior usamos el mismo formaquto que con los estudiantes:  
 
  Ejemplo:
