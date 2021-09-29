@@ -88,8 +88,8 @@ En la **class Data** creamos:
 Un nuevo atributo llamado:
 - **teachList**, que será un listado de profesores, atributo estático.  
 añadimos los siguientes métodos a esta clase: 
-- **addTeacher(Teacher teacher), para añadir al altributo anterior
-- **showAllTeachers() , muestra a cada profesor y su listado de asignaturas  
+- **addTeacher(Teacher teacher)**, para añadir al altributo anterior
+- **showAllTeachers()** , muestra a cada profesor y su listado de asignaturas  
 para mostrar el listado anterior usamos el mismo formaquto que con los estudiantes:  
 
  Ejemplo:
@@ -100,3 +100,7 @@ His subjects are:
 2. html  
 
 ---
+
+Implementar código que muestre un Student, junto con los datos del Student y las Subjects en las que está matriculado
+Ahora además debe aparecer al lado de cada asignatura el nombre del profesor que la imparte.  
+El método se llamará **showStudentAndHisSubjectsAndTeachers(String studenId)**

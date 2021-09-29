@@ -17,10 +17,7 @@ public class Student {
     }
 
     private void addSubject(Subject subject) {
-
         this.enrollSubjectList.add(subject);
-
-
     }
 
     public String getFirstName() {

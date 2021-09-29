@@ -8,23 +8,21 @@ public class Data {
 
 
     public static void addStudent(Student student) {
-
         Data.studenList.add(student);
     }
-    public static void addStudents(List<Student> studenList) {
 
+    public static void addStudents(List<Student> studenList) {
         Data.studenList.addAll(studenList);
     }
 
     public static void addTeacher(Teacher teacher) {
-
         Data.teachList.add(teacher);
     }
 
     public static void addTeachers(List<Teacher> teachList) {
-
         Data.teachList.addAll(teachList);
     }
+
     public static  void showAllStudents() {
         for(Student student : studenList) {
             System.out.println(student.toString());
@@ -38,14 +36,12 @@ public class Data {
             }
         }
     }
+
     public static void showAllTeachers() {
         for (Teacher teachers : Data.teachList) {
                 System.out.println(teachers);
             }
         }
-
-
-
 
     public static void showStudentByEnrollSubject(String subjectName){
         for (Student student : Data.studenList) {
@@ -54,9 +50,8 @@ public class Data {
                 if(subject.getName().equals(subjectName)){
                     System.out.println(student);
                 }
-
             }
         }
-
     }
+
 }

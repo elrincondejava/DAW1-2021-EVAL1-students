@@ -30,7 +30,6 @@ public class Subject {
 
     @Override
     public String toString() {
-
         return "\n" + name ;
     }
 }

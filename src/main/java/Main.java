@@ -67,8 +67,8 @@ public class Main {
 
         //USING METHODS OF DATA CLASS
         // Data.showAllStudents();
-        //Data.showStudent("4568P");
-        //Data.showStudentByEnrollSubject("english");
+        // Data.showStudent("4568P");
+        // Data.showStudentByEnrollSubject("english");
         Data.showAllTeachers();
 
     }
