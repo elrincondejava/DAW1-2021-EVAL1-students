@@ -2,8 +2,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Data {
-    private static List<Student> studenList = new ArrayList<>();
-    private static List<Teacher> teachList = new ArrayList<>();
+    public static List<Student> studenList = new ArrayList<>();
+    public static List<Teacher> teachList = new ArrayList<>();
+    public static final int  MINIMO_CREDITOS = 100;
 
 
 
@@ -32,10 +33,19 @@ public class Data {
     public static void showStudent(String studentId) {
         for (Student student : Data.studenList) {
             if (student.getStudentId().equals(studentId)) {
-                System.out.println(student);
+                System.out.println(student.toString());
             }
         }
     }
+
+    public static void showMatriculationStudent(Student student){
+            if(student.getStudentsCredits() >= Data.MINIMO_CREDITOS){
+                System.out.println( student.getFirstName() + " ya está matriculado con " +  student.getStudentsCredits() + " créditos");
+            }else{
+                System.out.println( student.getFirstName() + " NO está matriculado, tiene " +  student.getStudentsCredits() +  " créditos");
+            }
+    }
+
 
     public static void showAllTeachers() {
         for (Teacher teachers : Data.teachList) {

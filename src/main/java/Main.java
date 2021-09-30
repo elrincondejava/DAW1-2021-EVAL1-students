@@ -44,6 +44,12 @@ public class Main {
         // ADD SUBJECTS TO TEACHER SUBJECTS LIST
 
         //TODO Aquí faltaba añadir a los listados de asignatura de los profesores las asignaturas que va a impartir sólo teníamos las de los alumnos
+        subjectListAntonio.add(math);
+        subjectListJennifer.add(english);
+        subjectListJuan.add(computing);
+        subjectListMiguel.add(dataBase);
+        subjectListMariajo.add(java);
+        subjectListMariajo.add(html);
 
 
         // CREATING STUDENTS WITH THEIR SUBJECTS LIST
@@ -66,10 +72,16 @@ public class Main {
         Data.addTeachers(List.of(antonio, jennifer, juan, miguel, mariaJose));
 
         //USING METHODS OF DATA CLASS
-        // Data.showAllStudents();
-        // Data.showStudent("4568P");
+        //Data.showAllStudents();
+       // Data.showStudent("4568P");
         // Data.showStudentByEnrollSubject("english");
-        Data.showAllTeachers();
+        //Data.showAllTeachers();
+        Data.showMatriculationStudent(josefa);
+
+        //USING METHODS OF Student CLASS
+
+
+       //System.out.println(alex.getStudentsCredits());
 
     }
 }
