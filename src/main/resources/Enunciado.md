@@ -101,6 +101,13 @@ His subjects are:
 
 ---
 
-Implementar código que muestre un Student, junto con los datos del Student y las Subjects en las que está matriculado
-Ahora además debe aparecer al lado de cada asignatura el nombre del profesor que la imparte.  
-El método se llamará **showStudentAndHisSubjectsAndTeachers(String studenId)**
+Implementar código que a partir de ahora muestre un Student, no sólo los datos del Student y las Subjects en las que está matriculado, 
+sino además debe aparecer al lado de cada asignatura el nombre del profesor que la imparte.  
+
+Ejemplo:  
+Student Samuel Martín  
+His subjects are:
+1. math impartida por Antonio
+2. data base impartida por Miguel
+3. computing impartida por Juan 
+----  
