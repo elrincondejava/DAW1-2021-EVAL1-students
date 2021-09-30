@@ -110,7 +110,15 @@ His subjects are:
 1. math impartida por Antonio
 2. data base impartida por Miguel
 3. computing impartida por Juan 
-----  
+----
+
+
+Vamos a mejorar el código relacionado con la **class Student**, ya que ahora mismo cuando añadimos
+a un **student** las asignaturas que quiere estudiar, el código nos permite poder añadir más de una vez una asignatura y no pasaría nada.  
+Así que el método **addSubject(Subject subject)** debería tener un código que antes de añadir una **subject** al **private List<Subject> enrollSubjectList**, buscara si ya existe dicha asignatura para que no se pueda añadir y sino existe en el listado de subjects entonces si la puede añadir.
+
+
+---
 Para continuar ampliando el desarrollo de esta aplicación, vamos a implementar
 todo lo relacionado con notas, exámenes y ese tipo de cosas.
 Empezaremos poco a poco e iremos avanzando.  

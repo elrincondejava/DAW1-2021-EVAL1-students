@@ -4,7 +4,7 @@ import java.util.List;
 public class Data {
     public static List<Student> studenList = new ArrayList<>();
     public static List<Teacher> teachList = new ArrayList<>();
-    public static final int  MINIMO_CREDITOS = 100;
+    public static final int MIN_CREDITS = 100;
 
 
 
@@ -39,7 +39,7 @@ public class Data {
     }
 
     public static void showMatriculationStudent(Student student){
-            if(student.getStudentsCredits() >= Data.MINIMO_CREDITOS){
+            if(student.getStudentsCredits() >= Data.MIN_CREDITS){
                 System.out.println( student.getFirstName() + " ya está matriculado con " +  student.getStudentsCredits() + " créditos");
             }else{
                 System.out.println( student.getFirstName() + " NO está matriculado, tiene " +  student.getStudentsCredits() +  " créditos");
