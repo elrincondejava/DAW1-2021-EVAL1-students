@@ -111,3 +111,17 @@ His subjects are:
 2. data base impartida por Miguel
 3. computing impartida por Juan 
 ----  
+Para continuar ampliando el desarrollo de esta aplicación, vamos a implementar
+todo lo relacionado con notas, exámenes y ese tipo de cosas.
+Empezaremos poco a poco e iremos avanzando.  
+El primer paso será crear la **class Exam**  
+Recordemos que cuando creamos una clase es una maqueta de cómo
+serán los objetos, instancias individualmente.  
+En principio para esta clase necesitarmos los siguientes atributos:  
+
+- **dateTime**
+- **subject**  
+
+De momento añadimos la fecha de cuando se produce el exámen y de que asignatura es.
+Si crees que esta clase debería tener algún atributo más, añádele un máximo de dos más y lo comentamos
+
