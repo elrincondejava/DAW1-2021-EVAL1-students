@@ -47,6 +47,8 @@ public class Teacher {
                 "his subjects are: " + "\n";
         for (int i = 0; i < this.teachedSubjectList.size(); i++) {
             resultado += (i + 1) + ". " + this.teachedSubjectList.get(i).getName() + "\n";
+
+
         }
         return resultado;
     }

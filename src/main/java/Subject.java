@@ -1,6 +1,10 @@
+import java.util.List;
+
 public class Subject {
     private String name;
     private Integer credits;
+
+
 
     public Subject() {
     }
@@ -20,6 +24,7 @@ public class Subject {
     }
 
     public Integer getCredits() {
+
         return credits;
     }
 
@@ -28,8 +33,9 @@ public class Subject {
         return this;
     }
 
+
     @Override
     public String toString() {
-        return "\n" + name ;
+        return "\n" + name  ;
     }
 }
