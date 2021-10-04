@@ -114,14 +114,8 @@ His subjects are:
 
 
 Vamos a mejorar el código relacionado con la **class Student**, ya que ahora mismo cuando añadimos
-<<<<<<< Updated upstream
 a un **student** las asignaturas que quiere estudiar, el código nos permite poder añadir más de una vez una asignatura repetida y no pasaría nada.  
 Así que el método **addSubject(Subject subject)** debería tener un código que antes de añadir una **subject** al **private List<Subject> enrollSubjectList**, buscar si ya existe dicha asignatura para que no se pueda añadir y sino existe en el listado de subjects entonces si la puede añadir.
-=======
-a un **student** las asignaturas que quiere estudiar, el código nos permite poder añadir más de una vez una asignatura y no pasaría nada.  
-Así que el método **addSubject(Subject subject)** debería no poder añadir **subject** al **private List<Subject> enrollSubjectList** que estén repetidas, buscara si ya existe dicha asignatura para que no se pueda añadir y sino existe en el listado de subjects entonces si la puede añadir.
->>>>>>> Stashed changes
-
 
 ---
 Para continuar ampliando el desarrollo de esta aplicación, vamos a implementar
@@ -136,5 +130,21 @@ En principio para esta clase necesitarmos los siguientes atributos:
 - **subject**  
 
 De momento añadimos la fecha de cuando se produce el exámen y de que asignatura es.
-Si crees que esta clase debería tener algún atributo más, añádele un máximo de dos más y lo comentamos
+Si crees que esta clase debería tener algún atributo más, añádele un máximo de dos más y lo comentamos  
+
+---
+
+Modificamos el método **toString()** de la **class Student** para que me muestre el listado de exámenes que ha realizado el alumno.  
+Ahora debería quedar así:  
+
+Ejemplo:  
+Student Samuel Martín  
+His subjects are:
+1. math impartida por Antonio
+2. data base impartida por Miguel
+3. computing impartida por Juan
+
+Examns:
+1. math 5/10/2021 las 8:00, nota: 10 puntos
+----
 
