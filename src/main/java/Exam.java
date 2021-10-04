@@ -1,6 +1,6 @@
 import java.time.LocalDateTime;
 
-public class Exam {
+public class Exam  {
     private LocalDateTime datetime;
     private Subject subject;
     private double nota;
@@ -8,10 +8,10 @@ public class Exam {
     public Exam() {
     }
 
-    public Exam(LocalDateTime datetime, Subject subject, double nota) {
+    public Exam(LocalDateTime datetime, Subject subject) {
         this.datetime = datetime;
         this.subject = subject;
-        this.nota = nota;
+
     }
 
     public LocalDateTime getDatetime() {

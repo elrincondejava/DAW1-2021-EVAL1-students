@@ -6,6 +6,7 @@ public class Student {
     private String secondName;
     private String studentId;
     private List<Subject> enrollSubjectList;
+    private List<Exam> examList;
 
     public Student() {
     }
@@ -15,6 +16,7 @@ public class Student {
         this.secondName = secondName;
         this.studentId = studentId;
         this.enrollSubjectList = new ArrayList<>();
+        this.examList = new ArrayList<>();
     }
 
     public void addSubject(Subject newSubject) {
@@ -30,6 +32,16 @@ public class Student {
         }
 
     }
+
+    public List<Exam> getExamList() {
+        return examList;
+    }
+    public void addExam(Exam exam){
+
+        this.examList.add(exam);
+
+    }
+
 
     public String getFirstName() {
         return firstName;

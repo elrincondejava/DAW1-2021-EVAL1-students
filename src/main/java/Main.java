@@ -1,3 +1,4 @@
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -69,7 +70,7 @@ public class Main {
         Data.addTeachers(List.of(antonio, jennifer, juan, miguel, mariaJose));
 
         //USING METHODS OF DATA CLASS
-        Data.showAllStudents();
+        //Data.showAllStudents();
         // Data.showStudent("4568P");
         // Data.showStudentByEnrollSubject("english");
         //Data.showAllTeachers();
@@ -77,6 +78,11 @@ public class Main {
 
         //USING METHODS OF Student CLASS
 
+
+        // CREATING EXAM
+        Exam mathExamAlex = new Exam(LocalDateTime.of(2021,10,5,8,0,0),math);
+        mathExamAlex.setNota(10);
+        alex.addExam(mathExamAlex);
 
         //System.out.println(alex.getStudentsCredits());
 
