@@ -114,8 +114,8 @@ His subjects are:
 
 
 Vamos a mejorar el código relacionado con la **class Student**, ya que ahora mismo cuando añadimos
-a un **student** las asignaturas que quiere estudiar, el código nos permite poder añadir más de una vez una asignatura y no pasaría nada.  
-Así que el método **addSubject(Subject subject)** debería tener un código que antes de añadir una **subject** al **private List<Subject> enrollSubjectList**, buscara si ya existe dicha asignatura para que no se pueda añadir y sino existe en el listado de subjects entonces si la puede añadir.
+a un **student** las asignaturas que quiere estudiar, el código nos permite poder añadir más de una vez una asignatura repetida y no pasaría nada.  
+Así que el método **addSubject(Subject subject)** debería tener un código que antes de añadir una **subject** al **private List<Subject> enrollSubjectList**, buscar si ya existe dicha asignatura para que no se pueda añadir y sino existe en el listado de subjects entonces si la puede añadir.
 
 
 ---

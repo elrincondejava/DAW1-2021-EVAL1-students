@@ -13,26 +13,6 @@ public class Main {
         Subject html = new Subject("html", 40);
 
 
-        // CREATING SUBJECTS LIST FOR STUDENTS
-        List<Subject> subjectListManolo = new ArrayList<>();
-        List<Subject> subjectListMatilda = new ArrayList<>();
-        List<Subject> subjectListJosefa = new ArrayList<>();
-        List<Subject> subjectListAlex = new ArrayList<>();
-        List<Subject> subjectListJavier = new ArrayList<>();
-        List<Subject> subjectListSamuel = new ArrayList<>();
-
-        // ADD SUBJECTS TO STUDENT SUBJECTS LIST
-        subjectListManolo.add(math);
-        subjectListJosefa.add(english);
-        subjectListMatilda.add(computing);
-        subjectListMatilda.add(english);
-        subjectListAlex.add(dataBase);
-        subjectListAlex.add(java);
-        subjectListJavier.add(java);
-        subjectListJavier.add(html);
-        subjectListSamuel.addAll(List.of(math, dataBase, computing));
-
-
         // CREATING SUBJECTS LIST FOR TEACHERS
         List<Subject> subjectListAntonio = new ArrayList<>();
         List<Subject> subjectListJennifer = new ArrayList<>();
@@ -44,6 +24,7 @@ public class Main {
         // ADD SUBJECTS TO TEACHER SUBJECTS LIST
 
         //TODO Aquí faltaba añadir a los listados de asignatura de los profesores las asignaturas que va a impartir sólo teníamos las de los alumnos
+
         subjectListAntonio.add(math);
         subjectListJennifer.add(english);
         subjectListJuan.add(computing);
@@ -53,12 +34,28 @@ public class Main {
 
 
         // CREATING STUDENTS WITH THEIR SUBJECTS LIST
-        Student manolo = new Student("Manolo", "García", "4568P", subjectListManolo);
-        Student josefa = new Student("Josefa", "García", "4568Q", subjectListJosefa);
-        Student matilda = new Student("Matilda", "García", "4568A", subjectListMatilda);
-        Student alex = new Student("Alex", "Martel", "5432B", subjectListAlex);
-        Student javier = new Student("Javier", "Hernández", "8765K", subjectListJavier);
-        Student samuel = new Student("Samuel", "Martín", "4321Z", subjectListSamuel);
+        Student manolo = new Student("Manolo", "García", "4568P");
+        Student josefa = new Student("Josefa", "García", "4568Q");
+        Student matilda = new Student("Matilda", "García", "4568A");
+        Student alex = new Student("Alex", "Martel", "5432B");
+        Student javier = new Student("Javier", "Hernández", "8765K");
+        Student samuel = new Student("Samuel", "Martín", "4321Z");
+
+        // ADD SUBJECTS TO STUDENT SUBJECTS LIST
+        manolo.addSubject(math);
+        manolo.addSubject(math);//repetida
+        josefa.addSubject(english);
+        matilda.addSubject(computing);
+        matilda.addSubject(english);
+        alex.addSubject(dataBase);
+        alex.addSubject(java);
+        javier.addSubject(java);
+        javier.addSubject(html);
+        samuel.addSubject(math);
+        samuel.addSubject(dataBase);
+        samuel.addSubject(computing);
+        samuel.addSubject(computing);//repetida
+
 
         // CREATING TEACHERS WITH THEIR SUBJECTS LIST
         Teacher antonio = new Teacher("Antonio", "Fernández", subjectListAntonio);
@@ -72,16 +69,16 @@ public class Main {
         Data.addTeachers(List.of(antonio, jennifer, juan, miguel, mariaJose));
 
         //USING METHODS OF DATA CLASS
-        //Data.showAllStudents();
-       // Data.showStudent("4568P");
+        Data.showAllStudents();
+        // Data.showStudent("4568P");
         // Data.showStudentByEnrollSubject("english");
         //Data.showAllTeachers();
-        Data.showMatriculationStudent(josefa);
+        //Data.showMatriculationStudent(josefa);
 
         //USING METHODS OF Student CLASS
 
 
-       //System.out.println(alex.getStudentsCredits());
+        //System.out.println(alex.getStudentsCredits());
 
     }
 }

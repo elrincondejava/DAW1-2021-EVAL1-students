@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Student {
@@ -9,15 +10,25 @@ public class Student {
     public Student() {
     }
 
-    public Student(String firstName, String secondName, String studentId, List<Subject> enrollSubjectList) {
+    public Student(String firstName, String secondName, String studentId) {
         this.firstName = firstName;
         this.secondName = secondName;
         this.studentId = studentId;
-        this.enrollSubjectList = enrollSubjectList;
+        this.enrollSubjectList = new ArrayList<>();
     }
 
-    private void addSubject(Subject subject) {
-        this.enrollSubjectList.add(subject);
+    public void addSubject(Subject newSubject) {
+        boolean encontrado = false;
+        for (Subject subject : this.enrollSubjectList) {
+            if (newSubject.getName().equals(subject.getName())) {
+                encontrado = true;
+            }
+
+        }
+        if( encontrado == false){
+            this.enrollSubjectList.add(newSubject);
+        }
+
     }
 
     public String getFirstName() {
@@ -51,14 +62,10 @@ public class Student {
         return enrollSubjectList;
     }
 
-    public Student setEnrollSubjectList(List<Subject> enrollSubjectList) {
-        this.enrollSubjectList = enrollSubjectList;
-        return this;
-    }
 
-    public Integer getStudentsCredits (){
+    public Integer getStudentsCredits() {
         Integer creditos = 0;
-        for (Subject subject : this.getEnrollSubjectList() ) {
+        for (Subject subject : this.getEnrollSubjectList()) {
             creditos += subject.getCredits();
         }
 
@@ -74,7 +81,7 @@ public class Student {
 
             for (Teacher teacher : Data.teachList) {
                 for (Subject teacherSubject : teacher.getTeachedSubjectList()) {
-                    if (teacherSubject.getName().equals(enrollSubjectList.get(i).getName())){
+                    if (teacherSubject.getName().equals(enrollSubjectList.get(i).getName())) {
                         resultado += " impartido por : " + teacher.getFirstName() + " " + teacher.getSecondName() + "\n";
                     }
                 }
