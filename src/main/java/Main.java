@@ -80,10 +80,17 @@ public class Main {
 
 
         // CREATING EXAM
-        Exam mathExamAlex = new Exam(LocalDateTime.of(2021,10,5,8,0,0),math);
-        mathExamAlex.setNota(10);
-        alex.addExam(mathExamAlex);
-
+        Exam mathExamAlex1 = new Exam(LocalDateTime.of(2021,10,5,8,0,0),math);
+        mathExamAlex1.setNota(10);
+        alex.addExam(mathExamAlex1);
+        Exam mathExamAlex2 = new Exam(LocalDateTime.of(2021,10,15,9,30,0),math);
+        mathExamAlex2.setNota(7.5);
+        alex.addExam(mathExamAlex2);
+        Exam mathExamManolo = new Exam(LocalDateTime.of(2021,10,15,9,30,0),math);
+        mathExamManolo.setNota(2.5);
+        manolo.addExam(mathExamManolo);
+        //Data.showStudent("5432B");
+        Data.showExamByDateTime(LocalDateTime.of(2021,10,15,9,30,0));
         //System.out.println(alex.getStudentsCredits());
 
     }

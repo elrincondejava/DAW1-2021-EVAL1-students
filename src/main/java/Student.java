@@ -99,6 +99,12 @@ public class Student {
                 }
             }
         }
+        //1. math 5/10/2021 las 8:00, nota: 10 puntos
+         resultado += "Examns:" + "\n"  ;
+        for (int i = 0; i < this.examList.size(); i++) {
+             resultado += (i + 1) + "." + this.examList.get(i).toString();
+
+        }
         return resultado;
     }
 }

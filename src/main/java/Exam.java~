@@ -45,7 +45,7 @@ public class Exam  {
     public String toString() {
         return   subject.getName() + " " + datetime.getDayOfMonth() + "/" + datetime.getMonth() + "/" + datetime.getYear()
                 + " las " + datetime.getHour() + ":" + datetime.getMinute() + ","
-               + " nota: " + nota + " puntos" + "\n";
+               + " nota: " + nota + " puntos";
     }
 
 }

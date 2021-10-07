@@ -1,3 +1,4 @@
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -6,7 +7,24 @@ public class Data {
     public static List<Teacher> teachList = new ArrayList<>();
     public static final int MIN_CREDITS = 100;
 
+    public static void showExamByDateTime(LocalDateTime dateTime){
+       double notaMedia = 0;
+       int contador = 0;
+        System.out.println("Examenes de la fecha : " + dateTime );
+        for (Student studentExam: Data.studenList) {
+            for (Exam exam : studentExam.getExamList() ) {
+                if( exam.getDatetime().equals(dateTime) ){
+                    System.out.println("El estudiante : " + studentExam.getFirstName() +
+                            " y su nota es " + exam.getNota() );
+                    notaMedia += exam.getNota();
+                    contador++;
+                }
+            }
 
+        }
+        notaMedia /= contador;
+        System.out.println("la nota media es : " + notaMedia);
+    }
 
     public static void addStudent(Student student) {
         Data.studenList.add(student);
